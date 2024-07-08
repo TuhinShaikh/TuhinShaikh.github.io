@@ -8,12 +8,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f3f3f3; /* Light gray background */
+    background-color: #1c1c1c; /* Matte black background */
+    color: #f0f0f0; /* Light gray text */
 }
 
 header {
-    background-color: #002E63; /* Dark blue header */
-    color: #fff; /* White text */
+    background-color: #2b2b2b; /* Dark gray header */
+    color: #f0f0f0; /* Light gray text */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -45,17 +46,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White text */
+    color: #f0f0f0; /* Light gray text */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .hero {
-    background-image: url('https://www.colorhexa.com/002e63.png'); /* Replace with actual image URL */
+    background-image: url('https://www.colorhexa.com/2b2b2b.png'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
-    color: #fff; /* White text */
+    color: #f0f0f0; /* Light gray text */
     text-align: center;
     padding: 100px 20px;
 }
@@ -73,13 +74,13 @@ nav ul li a {
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
-    color: #fff; /* Ensure text color is white */
+    color: #f0f0f0; /* Ensure text color is light gray */
 }
 
 .btn {
     display: inline-block;
     background-color: #FF0000; /* Red button */
-    color: #fff; /* White text */
+    color: #f0f0f0; /* Light gray text */
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -93,11 +94,12 @@ nav ul li a {
 .featured {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f3f3f3; /* Light gray background */
+    background-color: #1c1c1c; /* Matte black background */
 }
 
 .featured h2 {
     margin-bottom: 30px;
+    color: #f0f0f0; /* Light gray text */
 }
 
 .insights {
@@ -107,27 +109,30 @@ nav ul li a {
 }
 
 .insight-card {
-    background-color: #fff;
+    background-color: #2b2b2b; /* Dark gray card background */
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: calc(33.33% - 40px);
+    color: #f0f0f0; /* Light gray text */
 }
 
 .insight-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #f0f0f0; /* Light gray text */
 }
 
 .insight-card p {
     font-size: 1.1em;
     margin-bottom: 15px;
+    color: #f0f0f0; /* Light gray text */
 }
 
 .insight-card .btn {
-    background-color: #002E63;
-    color: #fff;
+    background-color: #f0f0f0; /* Light gray button */
+    color: #1c1c1c; /* Matte black text */
     padding: 8px 15px;
     text-decoration: none;
     display: inline-block;
@@ -136,13 +141,13 @@ nav ul li a {
 }
 
 .insight-card .btn:hover {
-    background-color: #002E63;
+    background-color: #e0e0e0; /* Slightly darker light gray on hover */
 }
 
 footer {
     text-align: center;
-    background-color: #002E63; /* Dark blue footer */
-    color: #fff; /* White text */
+    background-color: #2b2b2b; /* Dark gray footer */
+    color: #f0f0f0; /* Light gray text */
     padding: 10px 0;
     position: absolute;
     bottom: 0;
