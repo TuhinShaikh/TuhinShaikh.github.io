@@ -1,0 +1,150 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f3f3; /* Light gray background */
+}
+
+header {
+    background-color: #002E63; /* Dark blue header */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Fixed position to stay on top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.hero {
+    background-image: url('https://www.colorhexa.com/002e63.png'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff; /* Ensure text color is white */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF0000; /* Red button */
+    color: #fff; /* White text */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d60707; /* Darker red on hover */
+}
+
+.featured {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f3f3f3; /* Light gray background */
+}
+
+.featured h2 {
+    margin-bottom: 30px;
+}
+
+.insights {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.insight-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: calc(33.33% - 40px);
+}
+
+.insight-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.insight-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.insight-card .btn {
+    background-color: #002E63;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.insight-card .btn:hover {
+    background-color: #002E63;
+}
+
+footer {
+    text-align: center;
+    background-color: #002E63; /* Dark blue footer */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
