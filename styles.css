@@ -5,7 +5,13 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #1c1c1c; /* Matte black background */
@@ -19,11 +25,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Fixed position to stay on top */
-    top: 0;
-    left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure header is above other content */
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .logo {
@@ -52,22 +58,39 @@ nav ul li a {
     font-size: 1.1em;
 }
 
+main {
+    flex: 1; 
+}
+
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); /* Replace with actual image URL */
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/50f57a126880613.61378bd8e5d27.gif'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;
     color: #f0f0f0; /* Light gray text */
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px; /* Adjusted padding to increase top space */
     height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.hero-about {
+    background-image: url('https://https://i.pinimg.com/originals/e3/21/41/e3214176eaf92928fa718d8aa15f33bb.gif.medium.com/v2/resize:fit:1400/1*NLnJcaRTdSF7xn6AFLJFmg.gif'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0; /* Light gray text */
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding to increase top space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the container */
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 50px; /* Additional padding to position the content higher */
 }
 
 .hero h1 {
@@ -122,6 +145,13 @@ nav ul li a {
     color: #f0f0f0; /* Light gray text */
 }
 
+.insight-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .insight-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
@@ -153,7 +183,5 @@ footer {
     background-color: #2b2b2b; /* Dark gray footer */
     color: #f0f0f0; /* Light gray text */
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
