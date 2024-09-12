@@ -177,7 +177,53 @@ main {
 .insight-card .btn:hover {
     background-color: #e0e0e0; /* Slightly darker light gray on hover */
 }
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.project-card {
+    background-color: #2b2b2b; /* Dark gray card background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: calc(33.33% - 40px); /* Adjust for spacing */
+    color: #f0f0f0; /* Light gray text */
+    text-align: left;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    background-color: #f0f0f0; /* Light gray button */
+    color: #1c1c1c; /* Matte black text */
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #e0e0e0; /* Slightly darker light gray on hover */
+}
 footer {
     text-align: center;
     background-color: #2b2b2b; /* Dark gray footer */
