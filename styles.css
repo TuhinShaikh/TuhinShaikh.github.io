@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-color: #2b2b2b; /* Dark gray header */
+    background-color: #080508; /* Dark gray header */
     color: #f0f0f0; /* Light gray text */
     padding: 10px 20px;
     display: flex;
@@ -174,11 +174,11 @@ main {
 
 .form-field:focus {
     outline: none;
-    border-color: #ff0000; /* Change border color when focused */
+    border-color: #DA101A; /* Change border color when focused */
 }
 
 .btn {
-    background-color: #FF0000; /* Keep the red button */
+    background-color: #DA101A; /* Keep the red button */
     color: #f0f0f0;
     padding: 12px 24px;
     border: none;
@@ -189,7 +189,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #d60707; /* Darker red on hover */
+    background-color: #DA101A; /* Darker red on hover */
 }
 
 /* Centering the entire section vertically */
@@ -203,7 +203,7 @@ main {
 /*end*/
 .btn {
     display: inline-block;
-    background-color: #FF0000; /* Red button */
+    background-color: #DA101A; /* Red button */
     color: #f0f0f0; /* Light gray text */
     text-decoration: none;
     padding: 10px 20px;
@@ -212,7 +212,7 @@ main {
 }
 
 .btn:hover {
-    background-color: #d60707; /* Darker red on hover */
+    background-color: #DA101A; /* Darker red on hover */
 }
 
 .featured {
