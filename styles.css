@@ -148,7 +148,59 @@ main {
 
 
 /*contact ME */
+.form-content {
+    max-width: 600px; /* Control the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #2b2b2b; /* Dark gray background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center; /* Center the text within the form */
+}
 
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+}
+
+.form-field {
+    width: 100%; /* Make input fields take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+    color: #1c1c1c;
+}
+
+.form-field:focus {
+    outline: none;
+    border-color: #ff0000; /* Change border color when focused */
+}
+
+.btn {
+    background-color: #FF0000; /* Keep the red button */
+    color: #f0f0f0;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d60707; /* Darker red on hover */
+}
+
+/* Centering the entire section vertically */
+.ab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+/*end*/
 .btn {
     display: inline-block;
     background-color: #FF0000; /* Red button */
