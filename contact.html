@@ -1,51 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<html></html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Tuhin's website</title>
-    <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="contact.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about-me-section">About Me</a></li>
-                <li><a href="index.html#experience-section">Experience</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
+	<div class="container">
+		<div class="site-banner">
+			<div class="header-menu">
+				<a href="">Logo</a> 
+				<span id="menu-icon" onClick="toggleMenu()"><img src="images/menu.svg" /></span>
+				<span id="header-right-menu"> 
+					<a href="#">Our work</a> 
+					<a href="#">About</a> 
+					<a href="#">News</a>
+					<a href="#" class="header-active">Contact</a>
+				</span>
+			</div>
+			<h1 class="heading">Contact Us</h1>
+		</div><div class="footer">
+			<div class="footer-column"><img class="map-image" src="images/location.jpg" /></div>
+			<div class="footer-column">
+				<div class="tile-content">
+					<h1>Meet Us</h1>
+					<div class="contact-row">
+						<img src="images/phone.svg"><span class="tile-field">+466723723666</span>
+					</div>
+					<div class="contact-row">
+						<img src="images/at-sign.svg"><span class="tile-field">contact@admin.com</span>
+					</div>
+					<div class="contact-row">
+						<img src="images/map-pin.svg"><span class="tile-field">1784 Griffin Street, Alabama</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer-column contact-form-container">
+				<div class="tile-content">
+					<form method="POST">
+						<h1>Contact</h1>
+						<div class="contact-row">
+							<input type="text" class="form-field" placeholder="Name">
+						</div>
+						<div class="contact-row">
+							<textarea rows="5" class="form-field" placeholder="Message"></textarea>
+						</div>
+						<button class="button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <main>
-        <section class="hero-about">
-            <div class="contact-container">
-                <div class="map-column">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.8212747483717!2d-0.5693243233848654!3d51.424709671794645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767755f3ce74c9%3A0xd04339084bd84568!2sRoyal%20Holloway!5e0!3m2!1sen!2suk!4v1721468370121!5m2!1sen!2suk" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-                <div class="info-column">
-                    <h1>Contact Me</h1>
-                    <h2>Feel free to email me at <a href="mailto:Tuhin.Shaikh.2023@live.rhul.ac.uk">Tuhin.Shaikh.2023@live.rhul.ac.uk</a></h2>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; Created by TUHIN SHAIKH.</p>
-    </footer>
+	<script>
+		function toggleMenu() {
+			var menuElement = document.getElementById("header-right-menu");
+			if (menuElement.style.display === "block") {
+				menuElement.style.display = "none";
+			} else {
+				menuElement.style.display = "block";
+			}
+		}
+	</script>
 </body>
 </html>
