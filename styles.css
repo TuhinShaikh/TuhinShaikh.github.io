@@ -103,6 +103,51 @@ main {
     margin-bottom: 30px;
     color: #f0f0f0; /* Ensure text color is light gray */
 }
+/*ABOUT ME */
+.ab {
+    background-image: url(https://images3.alphacoders.com/347/thumb-1920-34727.jpg); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0; /* Light gray text */
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding to increase top space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+.ab-about {
+    background-image: url('https://https://i.pinimg.com/originals/e3/21/41/e3214176eaf92928fa718d8aa15f33bb.gif.medium.com/v2/resize:fit:1400/1*NLnJcaRTdSF7xn6AFLJFmg.gif'); /* Replace with actual image URL */
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0; /* Light gray text */
+    text-align: center;
+    padding: 50px 20px; /* Adjusted padding to increase top space */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.ab-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px; /* Additional padding to position the content higher */
+}
+
+.ab h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.ab a {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #f0f0f0; /* Ensure text color is light gray */
+}
+
+
+/*ABOUT ME */
 
 .btn {
     display: inline-block;
