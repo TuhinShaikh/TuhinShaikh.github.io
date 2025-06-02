@@ -164,24 +164,31 @@ main {
     margin-bottom: 2rem;
     line-height: 1.7;
     font-size: 1rem;
+    text-align: left;
 }
 
-.insight-card .btn {
-    display: inline-block;
-    padding: 1rem 2.5rem;
+/* Skills Tags */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.skill-tag {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
-.insight-card .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.6);
-    background: linear-gradient(135deg, #764ba2, #667eea);
+.skill-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 /* Timeline Section */
@@ -227,6 +234,12 @@ main {
     padding: 2rem;
     border-radius: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 .timeline-item:nth-child(odd) {
@@ -279,6 +292,61 @@ main {
     line-height: 1.6;
 }
 
+/* Achievements Section */
+.achievements-section {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+
+.achievements-section h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.achievement-card h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.achievement-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
 /* Footer */
 footer {
     background: rgba(0, 0, 0, 0.8);
@@ -326,7 +394,7 @@ footer p {
         font-size: 2rem;
     }
 
-    .timeline-section {
+    .timeline-section, .achievements-section {
         padding: 2rem;
         margin: 3rem 1rem;
     }
@@ -344,6 +412,10 @@ footer p {
     .timeline-item::before {
         left: -40px !important;
     }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Animations */
@@ -358,6 +430,28 @@ footer p {
     }
 }
 
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .insight-card {
     animation: fadeInUp 0.8s ease-out;
 }
@@ -368,4 +462,44 @@ footer p {
 
 .insight-card:nth-child(3) {
     animation-delay: 0.4s;
+}
+
+.insight-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.timeline-item:nth-child(odd) {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.timeline-item:nth-child(even) {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.timeline-item:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.timeline-item:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.timeline-item:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.tech-category {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.tech-category:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.tech-category:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.tech-category:nth-child(4) {
+    animation-delay: 0.3s;
 }
