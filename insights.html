@@ -3,52 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Tuhin's website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Insights | Tuhin Shaikh</title>
+    <link rel="stylesheet" href="styles.css?v=20260701a">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="logo.png" alt="Tuhin Shaikh logo">
+                <span class="brand-copy">
+                    <span class="brand-title">Tuhin Shaikh</span>
+                    <span class="brand-sub">CS Graduate Portfolio</span>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a class="active" href="insights.html">Insights</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#experience-section">Experience</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
+        <div class="container">
+            <section class="reveal">
+                <h1 class="section-title" style="margin-top: 0;">Insights</h1>
+                <p class="section-lead">
+                    This page shares how I think about solving problems, not just what I built.
+                    It is intentionally different from the home page and project list.
+                </p>
+            </section>
 
-        <section id="experience-section" class="featured">
-            <h2>Experiences</h2>
-            <div class="insights">
-                <!-- Example cards for insights -->
-                <div class="insight-card">
-                    <img src="cfbl-image.png" alt="CFBL Consulting">
-                    <h3>Tech Intern CFBL Consulting (C-F Business Links)</h3>
-                    <p>During my placement, I enhanced my technical and managerial skills through various roles. I specialized in creating detailed SEO reports, analyzing website traffic and performance indicators, and recommending strategies to boost search engine ranking.</p>
-                    <a href="insights.html" class="btn">Read More</a>
+            <section class="reveal delay-1">
+                <div class="grid two">
+                    <article class="card item-card">
+                        <h3>Decision Framework: Speed vs Certainty</h3>
+                        <p>
+                            For route search, Dijkstra guarantees the shortest path while A* often reaches practical answers faster.
+                            I use both depending on whether the context values optimal proof or fast user-facing response.
+                        </p>
+                    </article>
+
+                    <article class="card item-card">
+                        <h3>Why Monte Carlo Matters</h3>
+                        <p>
+                            Real systems behave under uncertainty. Monte Carlo simulation helped model demand volatility,
+                            estimate queue risk, and expose edge cases before implementation.
+                        </p>
+                    </article>
+
+                    <article class="card item-card">
+                        <h3>What Experience Taught Me</h3>
+                        <p>
+                            CFBL, Dojo, and WalkUp taught me to tie technical outputs to outcomes.
+                            The best solution is the one users can understand, trust, and adopt.
+                        </p>
+                    </article>
+
+                    <article class="card item-card">
+                        <h3>Building as a Graduate</h3>
+                        <p>
+                            I focus on clean fundamentals: reliable architecture, readable code, responsive interfaces,
+                            and measurable improvements. That keeps projects interview-ready and production-ready.
+                        </p>
+                    </article>
                 </div>
-                <div class="insight-card">
-                    <img src="dojo-image.png" alt="Dojo">
-                    <h3>Tech Intern Dojo</h3>
-                    <p>During my internship at Dojo, a fintech company, I had the opportunity to work on various tech projects and contribute to the development of cutting-edge solutions. I collaborated with a team of skilled professionals to design and implement financial software applications.</p>
-                    <a href="insights.html" class="btn">Read More</a>
-                </div>
-                <div class="insight-card">
-                    <img src="walkup-image.jpg" alt="WalkUp by Dojo">
-                    <h3>Web Developer WalkUp by Dojo</h3>
-                    <p>During my web development work experience, I successfully built websites using JSON files, demonstrating my resilience in tackling complex challenges. JSON, a versatile data format, required me to leverage my HTML, CSS, and JavaScript skills to create dynamic web pages.</p>
-                    <a href="insights.html" class="btn">Read More</a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; Created by TUHIN SHAIKH
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <span>© 2026 Tuhin Shaikh</span>
+            <span>Engineering judgement and practical delivery</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

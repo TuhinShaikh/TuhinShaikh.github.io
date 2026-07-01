@@ -3,88 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Tuhin Shaikh</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About | Tuhin Shaikh</title>
+    <link rel="stylesheet" href="styles.css?v=20260701a">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="logo.png" alt="Tuhin's Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="index.html#experience-section">Experience</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="logo.png" alt="Tuhin Shaikh logo">
+                <span class="brand-copy">
+                    <span class="brand-title">Tuhin Shaikh</span>
+                    <span class="brand-sub">CS Graduate Portfolio</span>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="insights.html">Insights</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="ab">
-            <div class="ab-content">
-                <h1>About Me</h1>
-                <h2>As a distinguished second-year Computer Science student at Royal Holloway, University of London, I possess an exceptional analytical foundation, honed through my placement in the top 8% of the UKMT Maths Challenge. My deep technical expertise extends across various domains of computational theory and applied problem-solving. I have engineered and coded an advanced Lejos EV3 Robot, showcasing my capabilities in robotics and automation. As a former tech intern at Dojo, a leading fintech firm, I contributed to cutting-edge technological solutions, further fueling my ambition to become a software developer. My commitment to pushing the boundaries of artificial intelligence is further demonstrated through my involvement with the Royal Holloway AI team, where I collaborate on transformative AI-driven innovations, positioning myself at the forefront of the technological revolution shaping the financial industry.</h2>
-            </div>
-        </section>
+        <div class="container">
+            <section class="reveal">
+                <article class="card">
+                    <h1 class="section-title" style="margin-top: 0;">About Me</h1>
+                    <p class="section-lead">
+                        I am a Computer Science graduate with strong foundations in software engineering, algorithm design,
+                        and web development. I enjoy building practical tools that solve real operational problems, especially
+                        where data and user experience need to work together.
+                    </p>
+                    <p class="section-lead" style="margin-bottom: 0;">
+                        Alongside my technical projects, my current role as a West Ham Supporter Liaison Officer has built my
+                        ability to communicate clearly, handle high-pressure situations, and coordinate between different teams.
+                        I am now focused on securing a graduate software role where I can ship reliable, high-impact products.
+                    </p>
+                </article>
+            </section>
 
-        <section class="skills-section">
-            <h3>Technical Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h4>Programming</h4>
-                    <p>Java, Python, JavaScript</p>
+            <section class="reveal delay-1">
+                <h2 class="section-title">Core Skills</h2>
+                <div class="grid three">
+                    <article class="card item-card">
+                        <h3>Programming Languages</h3>
+                        <p>Java, Python, C++, JavaScript, TypeScript, SQL.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Backend and APIs</h3>
+                        <p>Spring Boot, Node.js, PostgreSQL, MongoDB, REST API design and performance tuning.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Frontend Engineering</h3>
+                        <p>React, HTML, CSS, JavaScript, responsive delivery, accessibility-first implementation.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Testing and Quality</h3>
+                        <p>JUnit, Mockito, JaCoCo, Selenium, Jest, regression testing, and TDD workflow.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Cloud and Delivery</h3>
+                        <p>AWS EC2 deployment, Docker basics, CI/CD practices, Git version control.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Analytics and Optimisation</h3>
+                        <p>Query indexing, performance profiling, shortest-path algorithms, Monte Carlo simulation.</p>
+                    </article>
                 </div>
-                <div class="skill-item">
-                    <h4>Web Development</h4>
-                    <p>HTML, CSS, React, JSON</p>
-                </div>
-                <div class="skill-item">
-                    <h4>Robotics</h4>
-                    <p>Lejos EV3, Automation</p>
-                </div>
-                <div class="skill-item">
-                    <h4>AI & Analytics</h4>
-                    <p>Machine Learning, Data Analysis</p>
-                </div>
-                <div class="skill-item">
-                    <h4>SEO & Marketing</h4>
-                    <p>Digital Marketing, Analytics</p>
-                </div>
-                <div class="skill-item">
-                    <h4>Problem Solving</h4>
-                    <p>Algorithms, Logic, Debugging</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="achievement-section">
-            <h3>Key Achievements</h3>
-            <div class="achievement-item">
-                <h4>🏆 UKMT Maths Challenge - Top 8%</h4>
-                <p>Demonstrated exceptional mathematical and analytical capabilities</p>
-            </div>
-            <div class="achievement-item">
-                <h4>🤖 Advanced Robotics Project</h4>
-                <p>Successfully engineered and programmed a Lejos EV3 Robot</p>
-            </div>
-            <div class="achievement-item">
-                <h4>💼 Fintech Experience</h4>
-                <p>Contributed to cutting-edge solutions at Dojo, a leading fintech company</p>
-            </div>
-            <div class="achievement-item">
-                <h4>🧠 AI Team Member</h4>
-                <p>Active participant in Royal Holloway AI team initiatives</p>
-            </div>
-        </section>
+            <section class="reveal delay-2">
+                <h2 class="section-title">What I Value</h2>
+                <div class="grid two">
+                    <article class="card item-card">
+                        <h4>Clear problem framing</h4>
+                        <p>I define constraints and measurable outcomes before coding.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h4>Simple, elegant solutions</h4>
+                        <p>I avoid unnecessary complexity and prioritize reliability and readability.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h4>Evidence-led decisions</h4>
+                        <p>I use data, tests, and scenario analysis to evaluate trade-offs.</p>
+                    </article>
+                    <article class="card item-card">
+                        <h4>Real-world impact</h4>
+                        <p>I focus on software that is useful to users, not just technically impressive.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Created by Tuhin Shaikh | Computer Science Student</p>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <span>© 2026 Tuhin Shaikh</span>
+            <span>Open to Graduate Software Roles</span>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

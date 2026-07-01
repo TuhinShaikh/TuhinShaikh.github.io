@@ -3,65 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Tuhin's Portfolio</title>
-    <link rel="stylesheet" href="index-styles.css">
+    <title>Tuhin Shaikh | Software Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=20260701a">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="logo.png" alt="Tuhin's Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="#experience-section">Experience</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a class="brand" href="index.html" aria-label="Home">
+                <img src="logo.png" alt="Tuhin Shaikh logo">
+                <span class="brand-copy">
+                    <span class="brand-title">Tuhin Shaikh</span>
+                    <span class="brand-sub">CS Graduate Portfolio</span>
+                </span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Experience</a>
+                <a href="project.html">Projects</a>
+                <a href="insights.html">Insights</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm Tuhin</h1>
-                <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 2rem;">Computer Science Student & Tech Enthusiast</p>
-                <a href="about.html" class="btn">About Me</a>
-            </div>
-        </section>
+        <div class="container">
+            <section class="hero reveal">
+                <article class="card hero-intro">
+                    <h1>CS Graduate building practical systems that work in the real world.</h1>
+                    <p>
+                        I recently graduated in Computer Science and I am actively looking for my first graduate software role.
+                        My work focuses on clear architecture, algorithmic problem-solving, and production-friendly web applications.
+                    </p>
+                    <div class="chip-row">
+                        <span class="chip">BSc Computer Science Graduate</span>
+                        <span class="chip">Open to Graduate Roles</span>
+                        <span class="chip">London, UK</span>
+                    </div>
+                    <div class="cta-row">
+                        <a class="btn btn-primary" href="project.html">View Projects</a>
+                        <a class="btn btn-secondary" href="contact.html">Get In Touch</a>
+                    </div>
+                </article>
+                <aside class="card hero-panel">
+                    <h2>Current Role</h2>
+                    <p>
+                        Right now I work as a West Ham Supporter Liaison Officer.
+                        That role sharpened my communication, stakeholder management, and calm problem-solving under pressure.
+                        I bring that same mindset into software delivery.
+                    </p>
+                </aside>
+            </section>
 
-        <section id="experience-section" class="featured">
-            <h2>Professional Experience</h2>
-            <div class="insights">
-                <div class="insight-card">
-                    <img src="cfbl-image.png" alt="CFBL Consulting">
-                    <h3>Tech Intern at CFBL Consulting</h3>
-                    <p>Enhanced technical and managerial skills through specialized SEO reporting, website traffic analysis, and strategic recommendations to boost search engine rankings and overall digital presence.</p>
-                    <a href="insights.html" class="btn">Read More</a>
+            <section class="reveal delay-1">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-lead">Selected projects with strong technical depth and clear business value.</p>
+                <div class="grid three">
+                    <article class="card item-card">
+                        <h3>Tottenham Parking System</h3>
+                        <p>
+                            Designed a route and parking decision tool that uses Dijkstra and A* to help drivers identify the closest station and optimal arrival strategy.
+                        </p>
+                        <p class="meta">Algorithms: Dijkstra, A*, graph search</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Monte Carlo Demand Simulation</h3>
+                        <p>
+                            Built a simulation model to estimate demand and stress-test parking capacity across matchday scenarios and uncertainty bands.
+                        </p>
+                        <p class="meta">Techniques: Monte Carlo, probability modelling</p>
+                    </article>
+                    <article class="card item-card">
+                        <h3>Data-Driven Web Builds</h3>
+                        <p>
+                            Delivered dynamic web interfaces using JSON-structured content with responsive layouts for fast iteration and maintainable updates.
+                        </p>
+                        <p class="meta">Stack: HTML, CSS, JavaScript, JSON</p>
+                    </article>
                 </div>
-                
-                <div class="insight-card">
-                    <img src="dojo-image.png" alt="Dojo">
-                    <h3>Tech Intern at Dojo</h3>
-                    <p>Contributed to cutting-edge fintech solutions by collaborating with skilled professionals on financial software applications, gaining valuable experience in the financial technology sector.</p>
-                    <a href="insights.html" class="btn">Read More</a>
-                </div>
-                
-                <div class="insight-card">
-                    <img src="walkup-image.jpg" alt="WalkUp by Dojo">
-                    <h3>Web Developer at WalkUp by Dojo</h3>
-                    <p>Successfully built dynamic websites using JSON files, demonstrating resilience in tackling complex challenges while leveraging HTML, CSS, and JavaScript skills to create engaging web experiences.</p>
-                    <a href="insights.html" class="btn">Read More</a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Created by Tuhin Shaikh | Computer Science Student</p>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <span>© 2026 Tuhin Shaikh</span>
+            <span>Computer Science Graduate • Portfolio</span>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
