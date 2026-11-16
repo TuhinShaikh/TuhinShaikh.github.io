@@ -1,3 +1,4 @@
+document.body.classList.add('reveal-ready');
 const navToggle=document.querySelector('.nav-toggle'),siteNav=document.querySelector('.site-nav');
 navToggle?.addEventListener('click',()=>{const open=siteNav.classList.toggle('open');document.body.classList.toggle('nav-open',open);navToggle.setAttribute('aria-expanded',String(open));});
 document.querySelectorAll('.site-nav a').forEach(link=>link.addEventListener('click',()=>{siteNav.classList.remove('open');document.body.classList.remove('nav-open');navToggle?.setAttribute('aria-expanded','false');}));
@@ -7,6 +8,7 @@ function type(){if(!target)return;const current=words[word];target.textContent=c
 
 const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+setTimeout(()=>document.querySelectorAll('.reveal:not(.visible)').forEach(el=>el.classList.add('visible')),1500);
 const sections=[...document.querySelectorAll('main section[id]')],navLinks=[...document.querySelectorAll('.site-nav a')];
 const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${entry.target.id}`))}}),{rootMargin:'-35% 0px -55% 0px'});
 sections.forEach(section=>navObserver.observe(section));
