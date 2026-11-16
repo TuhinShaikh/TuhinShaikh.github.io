@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tuhin Shaikh — CV</title>
+  <style>
+    @page { size: A4; margin: 15mm 16mm; }
+    :root { --ink:#2f3442; --muted:#626a7b; --pink:#b34ca8; --line:#d5cfc2; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); font-family:Arial, sans-serif; font-size:9.5pt; line-height:1.35; }
+    h1,h2,h3,p { margin:0; }
+    h1 { font-family:Georgia, serif; font-size:27pt; letter-spacing:-.03em; margin-bottom:2px; }
+    h2 { font-size:10pt; letter-spacing:.12em; text-transform:uppercase; color:var(--pink); border-bottom:1px solid var(--line); padding-bottom:4px; margin:15px 0 8px; }
+    h3 { font-size:10.5pt; margin-bottom:1px; }
+    .header { display:flex; justify-content:space-between; gap:30px; border-bottom:2px solid var(--ink); padding-bottom:10px; }
+    .subtitle { color:var(--muted); font-size:10pt; margin-top:3px; }
+    .contact { text-align:right; color:var(--muted); font-size:8.5pt; line-height:1.55; }
+    .contact a { color:inherit; text-decoration:none; }
+    .summary { font-size:10pt; max-width:680px; }
+    .role { margin-bottom:9px; break-inside:avoid; }
+    .role-head { display:flex; justify-content:space-between; gap:20px; }
+    .company { color:var(--muted); font-weight:normal; }
+    .date { color:var(--muted); white-space:nowrap; font-size:8.5pt; }
+    ul { margin:3px 0 0 16px; padding:0; }
+    li { margin:1px 0; }
+    .project { margin-bottom:7px; break-inside:avoid; }
+    .project h3 { display:inline; }
+    .project p { display:inline; }
+    .skills { display:grid; grid-template-columns:1fr 1fr; gap:4px 24px; }
+    .label { font-weight:bold; color:var(--ink); }
+    .footer-note { margin-top:13px; color:var(--muted); font-size:8pt; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div>
+      <h1>Tuhin Shaikh</h1>
+      <p class="subtitle">Data-focused Computer Science graduate · Tech Consultant</p>
+    </div>
+    <div class="contact">
+      <a href="mailto:shaikhtuhin07@gmail.com">shaikhtuhin07@gmail.com</a> · +44 7305 140049<br>
+      <a href="https://www.linkedin.com/in/shaikhtuhin/">linkedin.com/in/shaikhtuhin</a> ·
+      <a href="https://github.com/TuhinShaikh">github.com/TuhinShaikh</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional summary</h2>
+    <p class="summary">Computer Science graduate from Royal Holloway, University of London (2:1), now working as a Tech Consultant at Sparta Global on a data track. I turn messy data into useful answers with Python, SQL, Pandas, NumPy, MongoDB, Excel and machine learning. My experience includes cleaning transaction data, building dashboards, creating regression models and making operational feedback easier to use.</p>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="role">
+      <div class="role-head"><h3>BSc Computer Science <span class="company">— Royal Holloway, University of London</span></h3><span class="date">Sep 2023 – Jun 2026</span></div>
+      <p>Upper Second-class Honours (2:1). Data-relevant modules: Databases, Algorithms and Complexity, Symbolic AI, Computational Finance, Intelligent Agents, Software Engineering and Cybersecurity.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="role">
+      <div class="role-head"><h3>Tech Consultant <span class="company">— Sparta Global</span></h3><span class="date">2026 – present</span></div>
+      <p>Data track. Built regression models, MongoDB importers, dashboards and repeatable cleaning pipelines using Python, SQL and Excel across live training projects.</p>
+    </div>
+    <div class="role">
+      <div class="role-head"><h3>Supporter Liaison Officer <span class="company">— West Ham United</span></h3><span class="date">Aug 2023 – Sep 2026</span></div>
+      <ul><li>Resolved 100+ supporter queries per matchday across 60,000+ capacity events as the main link between supporters and internal teams.</li><li>Sped up issue resolution by 40% by building a structured feedback system that converted reports into clear records for senior stakeholders.</li></ul>
+    </div>
+    <div class="role">
+      <div class="role-head"><h3>Technology Intern <span class="company">— CFBL Consulting</span></h3><span class="date">Jun 2024 – Jul 2024</span></div>
+      <p>Built an HR administration website with JavaScript, REST APIs and Git, including login, clock-in and work-checking features.</p>
+    </div>
+    <div class="role">
+      <div class="role-head"><h3>Technology Intern <span class="company">— DOJO</span></h3><span class="date">Jun 2022 – Aug 2022</span></div>
+      <ul><li>Cleaned and transformed transaction data so production analytics dashboards used accurate figures.</li><li>Reduced dashboard load time by 50% through lazy loading and asynchronous rendering across React-based analytics dashboards.</li><li>Improved dashboard responsiveness for 4,000+ daily transactions by integrating concurrent REST API data fetching.</li></ul>
+    </div>
+    <div class="role">
+      <div class="role-head"><h3>Website Developer <span class="company">— WalkUp by DOJO</span></h3><span class="date">Feb 2022 – May 2022</span></div>
+      <p>Built a restaurant search site by postcode with a Node.js and MongoDB backend that handled 500+ concurrent requests.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected data projects</h2>
+    <div class="project"><h3>London Housing Price Prediction — </h3><p>Cleaned housing data, selected features, trained a linear regression model and checked predictions against real prices.</p></div>
+    <div class="project"><h3>Titanic Survival Prediction — </h3><p>Prepared data, trained a logistic regression model and used a confusion matrix to assess false positives and negatives.</p></div>
+    <div class="project"><h3>Football Transfers Excel Dashboard — </h3><p>Cleaned a large transfers dataset and built summary calculations, charts and filters while leaving the source data untouched.</p></div>
+    <div class="project"><h3>Star Wars API to MongoDB Importer — </h3><p>Built a repeatable Python importer with pagination, retries, timeouts, pilot links, unique indexes, upserts and mocked-API tests.</p></div>
+    <div class="project"><h3>Data Cleaning with NumPy and Pandas — </h3><p>Created a repeatable process for missing values, data types, duplicates and grouped checks.</p></div>
+    <div class="project"><h3>Heart Disease Data Visualisation — </h3><p>Built focused Python charts and documented what the data could and could not prove.</p></div>
+  </section>
+
+  <section>
+    <h2>Technical skills</h2>
+    <div class="skills">
+      <div><span class="label">Data:</span> Python, Pandas, NumPy, SQL, MongoDB, Excel, data visualisation, linear regression, logistic regression</div>
+      <div><span class="label">Engineering:</span> Java, Spring Boot, React, JavaScript, TypeScript, Node.js, REST APIs</div>
+      <div><span class="label">Tools:</span> PostgreSQL, Docker, AWS EC2, Git, CI/CD, JUnit, Mockito</div>
+      <div><span class="label">Languages:</span> Bengali (native), English (native), Spanish (elementary), Italian (elementary), Arabic (basic reading)</div>
+    </div>
+  </section>
+  <p class="footer-note">Portfolio: github.com/TuhinShaikh/TuhinShaikh.github.io</p>
+</body>
+</html>
